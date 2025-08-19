@@ -22,7 +22,7 @@ namespace PEI.Assesment.Plugins
             {
                 if (entity.Attributes.Contains("emailaddress1"))
                 {
-                    string email = entity["emailaddress1"].ToString();
+                    string email = entity["emailaddress1"].ToString().TrimStart().TrimEnd();
 
                     // Use QueryExpression to search for existing contacts with the same email
                     QueryExpression query = new QueryExpression("contact")
@@ -49,3 +49,4 @@ namespace PEI.Assesment.Plugins
         }
     }
 }
+
