@@ -7,7 +7,7 @@ describe('Opportunity.Form JS Tests', () => {
   describe('OnChangeOpportunityType', () => {
     test('Disables estimatedvalue for Fixed Price (10000000)', () => {
       const formContext = initFormContext({
-        pei_opportunitytype: 10000000,
+        pei_opportunitytype: { type: 'optionset', value: 10000000 },
         estimatedvalue: 0,
       })
 
@@ -28,7 +28,7 @@ describe('Opportunity.Form JS Tests', () => {
 
     test('Enables estimatedvalue and calculates revenue for Variable Price (10000001)', () => {
       const formContext = initFormContext({
-        pei_opportunitytype: 10000001,
+        pei_opportunitytype: { type: 'optionset', value: 10000001 },
         pei_unitprice: 200,
         pei_totalunits: 5,
         pei_discount: 100,
@@ -57,7 +57,7 @@ describe('Opportunity.Form JS Tests', () => {
   describe('OnLoad', () => {
     test('Disables estimatedvalue if Fixed Price on load', () => {
       const formContext = initFormContext({
-        pei_opportunitytype: 10000000,
+        pei_opportunitytype: { type: 'optionset', value: 10000000 },
         estimatedvalue: 0,
       })
 
@@ -76,7 +76,7 @@ describe('Opportunity.Form JS Tests', () => {
 
     test('Enables estimatedvalue if NOT Fixed Price on load', () => {
       const formContext = initFormContext({
-        pei_opportunitytype: 10000001,
+        pei_opportunitytype: { type: 'optionset', value: 10000001 },
         estimatedvalue: 0,
       })
 
