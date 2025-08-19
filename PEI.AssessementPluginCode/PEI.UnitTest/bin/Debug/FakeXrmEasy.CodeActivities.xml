@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FakeXrmEasy.CodeActivities</name>
+    </assembly>
+    <members>
+        <member name="T:FakeXrmEasy.CodeActivities.IXrmBaseContextCodeActivitiesExtensions">
+            <summary>
+            Adds extensions to execute code activities against a IXrmBaseContext
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.CodeActivities.IXrmBaseContextCodeActivitiesExtensions.GetDefaultWorkflowContext(FakeXrmEasy.Abstractions.IXrmBaseContext)">
+            <summary>
+            Gets a default workflow context with default values already populated
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.CodeActivities.IXrmBaseContextCodeActivitiesExtensions.ExecuteCodeActivity``1(FakeXrmEasy.Abstractions.IXrmBaseContext,System.Collections.Generic.Dictionary{System.String,System.Object},``0)">
+            <summary>
+            Executes a codeactivity with a default workflow context
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="context"></param>
+            <param name="inputs"></param>
+            <param name="instance"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.CodeActivities.IXrmBaseContextCodeActivitiesExtensions.ExecuteCodeActivity``1(FakeXrmEasy.Abstractions.IXrmBaseContext,FakeXrmEasy.CodeActivities.XrmFakedWorkflowContext,System.Collections.Generic.Dictionary{System.String,System.Object},``0)">
+            <summary>
+            Executes a codeactivity with a custom workflow default context
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:FakeXrmEasy.CodeActivities.XrmFakedWorkflowContext">
+            <summary>
+            Contains properties that can be passed to a fake code activity execution
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.CodeActivities.XrmFakedWorkflowContext.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:FakeXrmEasy.CodeActivities.XrmFakedWorkflowContext.ServiceEndpointNotificationService">
+            <summary>
+            The default service endpoint notification service that will be passed to the code activity
+            </summary>
+        </member>
+    </members>
+</doc>

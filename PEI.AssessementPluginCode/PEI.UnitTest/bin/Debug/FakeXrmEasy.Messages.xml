@@ -1,0 +1,1360 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FakeXrmEasy.Messages</name>
+    </assembly>
+    <members>
+        <member name="T:FakeXrmEasy.Messages.ContextProperties.CurrentOrganizationDetails">
+            <summary>
+            Stores information about the current organization details
+            </summary>
+        </member>
+        <member name="P:FakeXrmEasy.Messages.ContextProperties.CurrentOrganizationDetails.Details">
+            <summary>
+            The organization details
+            </summary>
+        </member>
+        <member name="T:FakeXrmEasy.Messages.Exceptions.ExportPdfDocumentRequest.EntityTypeCodeNotSpecifiedException">
+            <summary>
+            Exception raised when the EntityTypeCode parameter is missing
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.Messages.Exceptions.ExportPdfDocumentRequest.EntityTypeCodeNotSpecifiedException.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:FakeXrmEasy.Messages.Exceptions.ExportPdfDocumentRequest.EntityTypeCodeNotValidException">
+            <summary>
+            Exception raised when the EntityTypeCode parameter is not a valid integer
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.Messages.Exceptions.ExportPdfDocumentRequest.EntityTypeCodeNotValidException.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:FakeXrmEasy.Messages.Exceptions.ExportPdfDocumentRequest.SelectedRecordsIsNotValidException">
+            <summary>
+            Exception raised when the SelectedRecords parameter doesn't have a valid format
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.Messages.Exceptions.ExportPdfDocumentRequest.SelectedRecordsIsNotValidException.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:FakeXrmEasy.Messages.Exceptions.ExportPdfDocumentRequest.SelectedRecordsNotFoundException">
+            <summary>
+            Exception raised when the SelectedRecords parameter is valid but not found
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.Messages.Exceptions.ExportPdfDocumentRequest.SelectedRecordsNotFoundException.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:FakeXrmEasy.Messages.Exceptions.ExportPdfDocumentRequest.SelectedRecordsNotSpecifiedException">
+            <summary>
+            Exception raised when the SelectedRecords parameter is missing
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.Messages.Exceptions.ExportPdfDocumentRequest.SelectedRecordsNotSpecifiedException.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:FakeXrmEasy.Messages.Exceptions.ExportPdfDocumentRequest.SelectedTemplateMustBeEntityReferenceException">
+            <summary>
+            Exception raised when the SelectedTemplate was specified but not a valid EntityReference
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.Messages.Exceptions.ExportPdfDocumentRequest.SelectedTemplateMustBeEntityReferenceException.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:FakeXrmEasy.Messages.Exceptions.ExportPdfDocumentRequest.SelectedTemplateNotFoundException">
+            <summary>
+            Exception raised when the SelectedTemplate was specified but not found (it doesn't exists)
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.Messages.Exceptions.ExportPdfDocumentRequest.SelectedTemplateNotFoundException.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:FakeXrmEasy.Messages.Exceptions.ExportPdfDocumentRequest.SelectedTemplateNotSpecifiedException">
+            <summary>
+            Exception raised when the SelectedTemplate parameter is missing
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.Messages.Exceptions.ExportPdfDocumentRequest.SelectedTemplateNotSpecifiedException.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:FakeXrmEasy.Messages.Exceptions.InstantiateTemplateRequest.InvalidXsltAttributeValueException">
+            <summary>
+            Exception raised when the XSLT transform is not valid
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.Messages.Exceptions.InstantiateTemplateRequest.InvalidXsltAttributeValueException.#ctor(System.String)">
+            <summary>
+            Default constructor
+            </summary>
+            <param name="attributeName">The attribute name in the template record that is not valid</param>
+        </member>
+        <member name="T:FakeXrmEasy.Messages.Exceptions.NavigateToNextEntityOrganizationRequest.CurrentEntityNotFoundException">
+            <summary>
+            Exception raised when the entity record of the current stage associated to a given business process does not exist
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.Messages.Exceptions.NavigateToNextEntityOrganizationRequest.CurrentEntityNotFoundException.#ctor(System.String,System.Guid)">
+            <summary>
+            Default constructor
+            </summary>
+            <param name="logicalName"></param>
+            <param name="id"></param>
+        </member>
+        <member name="T:FakeXrmEasy.Messages.Exceptions.NavigateToNextEntityOrganizationRequest.NextEntityNotFoundException">
+            <summary>
+            Exception raised when the record of the the next stage in a given business process does not exist
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.Messages.Exceptions.NavigateToNextEntityOrganizationRequest.NextEntityNotFoundException.#ctor(System.String,System.Guid)">
+            <summary>
+            Default constructor
+            </summary>
+            <param name="logicalName"></param>
+            <param name="id"></param>
+        </member>
+        <member name="T:FakeXrmEasy.FakeMessageExecutors.Exceptions.PublishXmlRequest.ParameterXmlMissingException">
+            <summary>
+            Exception raised when ParameterXml is missing from the PublishXmlRequest
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.Exceptions.PublishXmlRequest.ParameterXmlMissingException.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:FakeXrmEasy.FakeMessageExecutors.Exceptions.WhoIAmRequest.BusinessUnitNotFoundException">
+            <summary>
+            Throws an exception when a business unit id was set in the CallerProperties that wasn't previously initialised
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.Exceptions.WhoIAmRequest.BusinessUnitNotFoundException.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.Exceptions.WhoIAmRequest.BusinessUnitNotFoundException.#ctor(System.Guid)">
+            <summary>
+            Exception constructor with the offending business unit id
+            </summary>
+            <param name="businessUnitId">The business unit id that was not initialised</param>
+        </member>
+        <member name="T:FakeXrmEasy.FakeMessageExecutors.AddListMembersListRequestExecutor">
+            <summary>
+            Implements AddListMembersListRequest : https://learn.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.addlistmemberslistrequest?view=dataverse-sdk-latest
+            </summary>
+        </member>
+        <member name="T:FakeXrmEasy.FakeMessageExecutors.AddListMembersListRequestExecutor.ListCreatedFromCode">
+            <summary>
+            Defines the possible entities from where a member list can be created
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.AddListMembersListRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.AddListMembersListRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>AddListMembersListResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.AddListMembersListRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FakeXrmEasy.FakeMessageExecutors.AddMembersTeamRequestExecutor">
+            <summary>
+            Implements a fake OrganizationRequest for AddMembersTeamRequest
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.AddMembersTeamRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.AddMembersTeamRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>AddMembersTeamRequestResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.AddMembersTeamRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.AddToQueueRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.AddToQueueRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>AddToQueueResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.AddToQueueRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.AddUserToRecordTeamRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.AddUserToRecordTeamRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>AddUserToRecordTeamResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.AddUserToRecordTeamRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.AssignRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.AssignRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>AssignResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.AssignRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.BulkDeleteRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.BulkDeleteRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>BulkDeleteResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.BulkDeleteRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.CloseIncidentRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.CloseIncidentRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>CloseIncidentResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.CloseIncidentRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.CloseQuoteRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.CloseQuoteRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>CloseQuoteResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.CloseQuoteRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FakeXrmEasy.FakeMessageExecutors.CommitFileBlocksUploadRequestExecutor">
+            <summary>
+            Implements the CommitFileBlocksUploadRequest https://learn.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.commitfileblocksuploadrequest?view=dataverse-sdk-latest
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.CommitFileBlocksUploadRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Returns true when the request is a CommitFileBlocksUploadRequest
+            </summary>
+            <param name="request">The request to check if it can be executed by this executor</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.CommitFileBlocksUploadRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Executes a CommitFileBlocksUploadRequest
+            </summary>
+            <param name="request">The request to execute</param>
+            <param name="ctx">The IXrmFakedContext that this request will be executed against</param>
+            <returns>CommitFileBlocksUploadResponse</returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.CommitFileBlocksUploadRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            The type of CommitFileBlocksUploadRequest
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FakeXrmEasy.FakeMessageExecutors.DeleteFileRequestExecutor">
+            <summary>
+            Implements the DeleteFileRequest message https://learn.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.deletefilerequest?view=dataverse-sdk-latest
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.DeleteFileRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Returns true if the request is a DeleteFileRequest message
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.DeleteFileRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements a fake DeleteFileRequest message
+            </summary>
+            <param name="request"></param>
+            <param name="ctx"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.DeleteFileRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of DeleteFileRequest
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="T:FakeXrmEasy.FakeMessageExecutors.DownloadBlockRequestExecutor">
+            <summary>
+            Implements the DownloadBlockRequest message https://learn.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.downloadblockrequest?view=dataverse-sdk-latest
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.DownloadBlockRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Returns true if the request is a DownloadBlockRequest
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.DownloadBlockRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Executes a fake implementation of DownloadBlockRequest
+            </summary>
+            <param name="request"></param>
+            <param name="ctx"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.DownloadBlockRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the DownloadBlockRequest type
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.ExecuteFetchRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.ExecuteFetchRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>ExecuteFetchResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.ExecuteFetchRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.ExecuteMultipleRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.ExecuteMultipleRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>ExecuteMultipleResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.ExecuteMultipleRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.ExecuteTransactionExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.ExecuteTransactionExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>ExecuteTransactionResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.ExecuteTransactionExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.FetchXmlToQueryExpressionRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.FetchXmlToQueryExpressionRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>FetchXmlToQueryExpressionResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.FetchXmlToQueryExpressionRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FakeXrmEasy.FakeMessageExecutors.GenericExecutors.ExportPdfDocumentExecutor">
+            <summary>
+            This message is an internal message which is only available for Dynamics 365 for Sales
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.GenericExecutors.ExportPdfDocumentExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the current request can be executed by this executor
+            </summary>
+            <param name="request">The request being executed</param>
+            <returns>true if it can be executed, false otherwise</returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.GenericExecutors.ExportPdfDocumentExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Executes the current request
+            </summary>
+            <param name="request">The request to be executed</param>
+            <param name="ctx">The current IXrmFakedContext that will be used to execute the request</param>
+            <returns>A generic OrganizationResponse with a dummy byte array representing the exported Pdf</returns>
+            <exception cref="T:FakeXrmEasy.Messages.Exceptions.ExportPdfDocumentRequest.SelectedRecordsNotFoundException"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.GenericExecutors.ExportPdfDocumentExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the responsible request type for this request.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.GenericExecutors.ExportPdfDocumentExecutor.GetRequestName">
+            <summary>
+            Returns the request name that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FakeXrmEasy.FakeMessageExecutors.GenericExecutors.NavigateToNextEntityOrganizationRequestExecutor">
+            <summary>
+            It will navigate to next Entity in Workflow path and add next Stage Id to traversed path.
+            
+            Additional links:
+            https://www.magnetismsolutions.com/blog/gayanperera/2016/02/19/programmatically-move-cross-entity-business-process-flow-stages-in-crm-2016
+            https://community.dynamics.com/crm/b/magnetismsolutionscrmblog/archive/2016/02/19/programmatically-move-cross-entity-business-process-flow-stages-in-crm-2016
+            https://crmtipoftheday.com/589/programmatically-move-cross-entity-business-process-flow-stages-in-crm-2016/
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.GrantAccessRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.GrantAccessRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>GrantAccessResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.GrantAccessRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FakeXrmEasy.FakeMessageExecutors.InitializeFileBlocksDownloadRequestExecutor">
+            <summary>
+            Implements the InitializeFileBlocksDownloadRequest message https://learn.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.initializefileblocksdownloadrequest?view=dataverse-sdk-latest
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.InitializeFileBlocksDownloadRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Returns true if InitializeFileBlocksDownloadRequest can be executed
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.InitializeFileBlocksDownloadRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Executes a fake implementation of InitializeFileBlocksDownloadRequest
+            </summary>
+            <param name="request"></param>
+            <param name="ctx"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.InitializeFileBlocksDownloadRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of InitializeFileBlocksDownloadRequest
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="T:FakeXrmEasy.FakeMessageExecutors.InitializeFileBlocksUploadRequestExecutor">
+            <summary>
+            Implements the InitializeFileBlocksUploadRequest message: https://learn.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.initializefileblocksuploadrequest?view=dataverse-sdk-latest
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.InitializeFileBlocksUploadRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Returns true when asked if it can execute an InitializeFileBlocksUploadRequest message
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.InitializeFileBlocksUploadRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Executes a fake implementation of the request using an In-Memory File Storage mechanism
+            </summary>
+            <param name="request">The request to execute</param>
+            <param name="ctx">The context to store the files against</param>
+            <returns>InitializeFileBlocksUploadResponse</returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.InitializeFileBlocksUploadRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of InitializeFileBlocksUploadResponse
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FakeXrmEasy.FakeMessageExecutors.InitializeFromRequestExecutor">
+            <summary>
+            A fake messag executor that implements the InitializeFromRequest message
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.InitializeFromRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.InitializeFromRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.InitializeFromRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>InitializeFromResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.InsertOptionValueRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.InsertOptionValueRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>InsertOptionValueResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.InsertOptionValueRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.InsertStatusValueRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.InsertStatusValueRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>InsertStatusValueResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.InsertStatusValueRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FakeXrmEasy.FakeMessageExecutors.InstantiateTemplateRequestExecutor">
+            <summary>
+            Provides a fake implementation for an InstantiateTemplateRequest
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.InstantiateTemplateRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.InstantiateTemplateRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>InstantiateTemplateResponse with the instantiated email</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.InstantiateTemplateRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.LoseOpportunityRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.LoseOpportunityRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>LoseOpportunityResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.LoseOpportunityRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.ModifyAccessRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.ModifyAccessRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>ModifyAccessResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.ModifyAccessRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.PickFromQueueRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.PickFromQueueRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>PickFromQueueResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.PickFromQueueRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.PublishXmlRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.PublishXmlRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>PublishXmlResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.PublishXmlRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.QualifyLeadRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.QualifyLeadRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>QualifyLeadResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.QualifyLeadRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RemoveFromQueueRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RemoveFromQueueRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>RemoveFromQueueResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RemoveFromQueueRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RemoveMembersTeamRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RemoveMembersTeamRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>RemoveMembersTeamResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RemoveMembersTeamRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RemoveUserFromRecordTeamRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RemoveUserFromRecordTeamRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>RemoveUserFromRecordTeamResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RemoveUserFromRecordTeamRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrieveAttributeRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrieveAttributeRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>RetrieveAttributeResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrieveAttributeRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FakeXrmEasy.FakeMessageExecutors.RetrieveCurrentOrganizationRequestExecutor">
+            <summary>
+            Implements an executor for the RetrieveCurrentOrganizationRequest: https://learn.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.retrievecurrentorganizationrequest?view=dataverse-sdk-latest
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrieveCurrentOrganizationRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrieveCurrentOrganizationRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>RetrieveCurrentOrganizationResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrieveCurrentOrganizationRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrieveEntityRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrieveEntityRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>RetrieveEntityResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrieveEntityRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrieveExchangeRateRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrieveExchangeRateRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>RetrieveExchangeRateResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrieveExchangeRateRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrieveOptionSetRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrieveOptionSetRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>RetrieveOptionSetResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrieveOptionSetRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrievePrincipalAccessRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrievePrincipalAccessRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>RetrievePrincipalAccessResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrievePrincipalAccessRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrieveRelationshipRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrieveRelationshipRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>RetrieveRelationshipResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrieveRelationshipRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrieveSharedPrincipalsAndAccessRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrieveSharedPrincipalsAndAccessRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>RetrieveSharedPrincipalsAndAccessResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrieveSharedPrincipalsAndAccessRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrieveVersionRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrieveVersionRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>RetrieveVersionResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RetrieveVersionRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.ReviseQuoteRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.ReviseQuoteRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>ReviseQuoteResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.ReviseQuoteRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RevokeAccessRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RevokeAccessRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>RevokeAccessResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.RevokeAccessRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FakeXrmEasy.FakeMessageExecutors.SendEmailFromTemplateRequestExecutor">
+            <summary>
+            Provides a fake implementation for SendEmailFromTemplateRequest
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.SendEmailFromTemplateRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.SendEmailFromTemplateRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>SendEmailFromTemplateResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.SendEmailFromTemplateRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.SendEmailRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.SendEmailRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>SendEmailResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.SendEmailRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FakeXrmEasy.FakeMessageExecutors.SendFaxRequestExecutor">
+            <summary>
+            Implements the SendFaxRequest message
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.SendFaxRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.SendFaxRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.SendFaxRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>SendEmailResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="T:FakeXrmEasy.FakeMessageExecutors.SendTemplateRequestExecutor">
+            <summary>
+            Provides a fake implementation for SendTemplateRequest
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.SendTemplateRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.SendTemplateRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>SendEmailResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.SendTemplateRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.SetStateRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.SetStateRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>SetStateResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.SetStateRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FakeXrmEasy.FakeMessageExecutors.UploadBlockRequestExecutor">
+            <summary>
+            Implements the UploadBlockRequest message https://learn.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.uploadblockrequest?view=dataverse-sdk-latest
+            </summary>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.UploadBlockRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Returns true if the request to execute is an UploadBlockRequest
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.UploadBlockRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Executes the current request
+            </summary>
+            <param name="request"></param>
+            <param name="ctx"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.UploadBlockRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of UploadBlockRequest
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.WhoAmIRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.WhoAmIRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>WhoAmIResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.WhoAmIRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.WinOpportunityRequestExecutor.CanExecute(Microsoft.Xrm.Sdk.OrganizationRequest)">
+            <summary>
+            Determines if the given request can be executed by this executor
+            </summary>
+            <param name="request">The OrganizationRequest that is currently executing</param>
+            <returns></returns>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.WinOpportunityRequestExecutor.Execute(Microsoft.Xrm.Sdk.OrganizationRequest,FakeXrmEasy.Abstractions.IXrmFakedContext)">
+            <summary>
+            Implements the execution of the current request with this executor against a particular XrmFakedContext
+            </summary>
+            <param name="request">The current request that is being executed</param>
+            <param name="ctx">The instance of an XrmFakedContext that the request will be executed against</param>
+            <returns>WinOpportunityResponse</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FakeXrmEasy.FakeMessageExecutors.WinOpportunityRequestExecutor.GetResponsibleRequestType">
+            <summary>
+            Returns the type of the concrete OrganizationRequest that this executor implements
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
