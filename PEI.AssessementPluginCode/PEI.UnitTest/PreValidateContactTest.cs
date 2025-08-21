@@ -8,12 +8,20 @@ using FakeXrmEasy.Plugins;
 
 namespace PEI.UnitTest
 {
+    /// <summary>
+    /// Unit test cases for plugin PreValidateCContact.
+    /// This class contains methods to test the PreValidateCContact plugin functionality.
+    /// </summary>
     [TestClass]
     public class PreValidateContactTest
     {
         // intiating the fake xrm properties
         internal FakeXrm fakeXrm = new FakeXrm();
         
+        /// <summary>
+        /// Creating a contact with an existing email address.
+        /// This test checks if the plugin throws an exception when trying to create a contact with an email address that already exists in the system.
+        /// </summary>
         [TestMethod]
         public void expectPluginException()
         {
@@ -45,6 +53,10 @@ namespace PEI.UnitTest
 
         }
 
+        /// <summary>
+        /// Creating a contact with a whitespace email address.
+        /// This test checks if the plugin throws an exception when trying to create a contact with an email address that contains only whitespace characters. 
+        /// </summary>
         [TestMethod]
         public void expectPluginExceptionWhiteSpaceEmailProvided()
         {
@@ -76,6 +88,11 @@ namespace PEI.UnitTest
 
         }
 
+        /// <summary>
+        /// Creating a contact with a valid email address.
+        /// This test checks if the plugin allows the creation of a contact with a valid email address.
+        /// The email address is checked against existing contacts to ensure it is unique.
+        /// </summary>
         [TestMethod]
         public void AllowContact()
         {

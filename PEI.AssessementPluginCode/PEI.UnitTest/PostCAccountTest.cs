@@ -20,6 +20,8 @@ namespace PEI.UnitTest
         /// <summary>
         /// Creating contact with Account name as last name.
         /// Checking the last name of contact created is equal to Account name created 
+        /// and first name is Default.
+        /// Also checking the parentcustomerid of contact created is equal to Account id created.
         /// </summary>
         [TestMethod]
         public void CreateContactWithAccountName()
@@ -50,6 +52,10 @@ namespace PEI.UnitTest
             Assert.AreEqual((createdContact.GetAttributeValue<EntityReference>("parentcustomerid")).Id, account.Id);
         }
 
+        /// <summary>
+        /// Creating contact with out Account name.
+        /// Checking the last name of contact created is equal to Unknown and first name is Default.
+        /// </summary>
         [TestMethod]
         public void CreateContactWithOutAccountName()
         {

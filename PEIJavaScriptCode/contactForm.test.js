@@ -4,7 +4,19 @@ const {
 } = require('./test-utils/d365TestHarness.js')
 const Contact = require('./ContactForm.js')
 const { text } = require('stream/consumers')
-
+/**
+ * Contact Form Tests
+ * These tests are designed to validate the functionality of the Contact Form in a Dynamics 365 environment
+ * They cover the behavior of the Preferred Contact Method field and the validation of email and phone fields
+ * when saving the form.
+ * The tests use a shared harness to initialize the form context and execution context for each test case
+ * ensuring a consistent environment for testing.
+ * The tests include scenarios for setting required levels based on the Preferred Contact Method,
+ * validating that at least one contact method is provided,
+ * and preventing form submission when both email and phone fields are empty.
+ * Each test case logs its actions and expectations to the console for easier debugging and understanding of the
+ * test flow.
+ */
 describe('Contact.Form Tests (with shared harness)', () => {
   describe('OnChangePCMethod', () => {
     test('sets Email required when Preferred Contact Method is Email (2)', () => {

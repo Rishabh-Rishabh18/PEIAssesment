@@ -3,6 +3,17 @@ const {
   buildExecutionContext,
 } = require('./test-utils/d365TestHarness.js')
 const Opportunity = require('./OpportunityForm.js')
+/**
+ * Opportunity Form Tests
+ * These tests cover the JavaScript functionality of the Opportunity form.
+ * They validate the behavior of the Opportunity Type field and the Estimated Value field.
+ * The tests ensure that the Estimated Value field is disabled when the Opportunity Type is set to Fixed
+ * Price and enabled when set to Variable Price.
+ * They also check that the Estimated Value is calculated correctly based on the Unit Price, Total Units, and Discount
+ * when the Opportunity Type is Variable Price.
+ * Each test case initializes the form context and execution context to provide a consistent environment for testing.
+ * The tests log their actions and expectations to the console for easier debugging and understanding of the test flow.
+ */
 describe('Opportunity.Form JS Tests', () => {
   describe('OnChangeOpportunityType', () => {
     test('Disables estimatedvalue for Fixed Price (10000000)', () => {
